@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <body>
+        <h1>Leap Year Checker</h1>
+        <h1>Leap Years are any year that can be exactly divided by 4 (such as 2016, 2020, 2024, etc) except if it can be exactly divided by 100, then it isn't (such as 2100, 2200, etc) except if it can be exactly divided by 400, then it is (such as 2000, 2400).</h1>
+<script>
+            // program to check leap year
+            function checkLeapYear(year) {
+    
+                //three conditions to find out the leap year
+                if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+                    console.log(year + " is a leap year");
+                } else {
+                    console.log(year + " is not a leap year");
+                }
+            }
+    
+            // take input
+            const year = prompt('Enter a year:');
+    
+            checkLeapYear(year);
+        </script>
+</body>
+</html>
